@@ -1,0 +1,21 @@
+{
+    "name": "braddle/009-phpspec",
+    "description": "Demonstation of of PHPSpec",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mark Bradley",
+            "email": "braddle@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Braddle\\": "src"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "phpspec/phpspec": "^5.1"
+    }
+}

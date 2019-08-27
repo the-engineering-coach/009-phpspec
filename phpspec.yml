@@ -1,0 +1,4 @@
+suites:
+  roman_numerals:
+    namespace: Braddle
+    psr4_prefix: Braddle
