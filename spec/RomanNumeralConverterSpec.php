@@ -75,4 +75,11 @@ class RomanNumeralConverterSpec extends ObjectBehavior
         $this->convert("LXX")->shouldReturn(70);
         $this->convert("MDC")->shouldReturn(1600);
     }
+
+    function it_subtracts_values_where_previous_is_smaller()
+    {
+        $this->convert("IV")->shouldReturn(4);
+        $this->convert("VL")->shouldReturn(45);
+        $this->convert("CM")->shouldReturn(900);
+    }
 }
