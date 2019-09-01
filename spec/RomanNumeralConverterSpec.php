@@ -58,4 +58,11 @@ class RomanNumeralConverterSpec extends ObjectBehavior
         $this->convert("d")->shouldReturn(500);
         $this->convert("m")->shouldReturn(1000);
     }
+
+    function it_add_values_where_numeral_are_the_same()
+    {
+        $this->convert("II")->shouldReturn(2);
+        $this->convert("CCC")->shouldReturn(300);
+        $this->convert("MMMM")->shouldReturn(4000);
+    }
 }
