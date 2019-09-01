@@ -65,4 +65,14 @@ class RomanNumeralConverterSpec extends ObjectBehavior
         $this->convert("CCC")->shouldReturn(300);
         $this->convert("MMMM")->shouldReturn(4000);
     }
+
+    function it_adds_values_where_previous_number_is_larger()
+    {
+        $this->convert("VI")->shouldReturn(6);
+        $this->convert("XV")->shouldReturn(15);
+        $this->convert("MD")->shouldReturn(1500);
+        $this->convert("VII")->shouldReturn(7);
+        $this->convert("LXX")->shouldReturn(70);
+        $this->convert("MDC")->shouldReturn(1600);
+    }
 }

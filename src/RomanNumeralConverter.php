@@ -14,7 +14,7 @@ class RomanNumeralConverter
         foreach ($numerals as $numeral) {
             $value = $this->convertSingleNumeral($numeral);
 
-            if (is_null($previous) || $value == $previous) {
+            if (is_null($previous) || $value <= $previous) {
                 $total += $value;
             }
 
