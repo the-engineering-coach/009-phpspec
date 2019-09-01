@@ -47,4 +47,15 @@ class RomanNumeralConverterSpec extends ObjectBehavior
     {
         $this->convert("M")->shouldReturn(1000);
     }
+
+    function it_converts_all_lowercase_single_numeral()
+    {
+        $this->convert("i")->shouldReturn(1);
+        $this->convert("v")->shouldReturn(5);
+        $this->convert("x")->shouldReturn(10);
+        $this->convert("l")->shouldReturn(50);
+        $this->convert("c")->shouldReturn(100);
+        $this->convert("d")->shouldReturn(500);
+        $this->convert("m")->shouldReturn(1000);
+    }
 }

@@ -6,6 +6,7 @@ class RomanNumeralConverter
 {
     public function convert($numeral)
     {
+        $numeral = strtoupper($numeral);
         switch ($numeral) {
             case "I":
                 return 1;
